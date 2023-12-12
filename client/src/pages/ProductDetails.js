@@ -66,7 +66,7 @@ const ProductDetails = () => {
         const UId = Cookies.get('useid');
         
         
-        fetch('/cart/add', {
+        fetch('http://65.1.134.51:3001/cart/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
