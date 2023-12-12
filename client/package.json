@@ -1,0 +1,61 @@
+{
+  "name": "trinity furniture",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://0.0.0.0:3001",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "canvas-confetti": "^1.6.0",
+    "fancybox": "^3.0.1",
+    "hammerjs": "^2.0.8",
+    "i18next": "^23.3.0",
+    "jquery": "^3.7.0",
+    "magnific-popup": "^1.1.0",
+    "query": "^0.2.0",
+    "rcarousel": "^1.5.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-bootstrap-modal": "^4.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-cookie-consent": "^8.0.1",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.0.2",
+    "react-icons": "^4.4.0",
+    "react-image-zoom": "^1.3.1",
+    "react-router-dom": "^6.13.0",
+    "sass": "^1.53.0",
+    "swiper": "^8.3.1",
+    "web-vitals": "^2.1.4",
+    "xzoom": "^1.0.15"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}
