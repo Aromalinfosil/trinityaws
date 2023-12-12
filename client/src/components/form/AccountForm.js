@@ -106,7 +106,6 @@ const AccountForm = () => {
             state: state,
             phone : phone,
 
-
             }).then((response) => {
             if (response.data.message) {
             setRegisterStatus(response.data.message);

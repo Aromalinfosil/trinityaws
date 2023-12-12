@@ -61,13 +61,13 @@ function Products() {
               <td>{product.price}</td>
               <td>
                 <img
-                  src={`/uploads/${product.image}`}
+                  src={`http://65.1.134.51:3001/uploads/${product.image}`}
                   style={{ width: '100px', height: '100px' }}
                   alt="Product"
                 />
               </td>
               <td>
-                <Link to={`/prodisplay/${product.id}`} className="btn btn-success" style={{ marginRight: '10px' }}>
+                <Link to={`http://65.1.134.51:3001/prodisplay/${product.id}`} className="btn btn-success" style={{ marginRight: '10px' }}>
                   Edit
                 </Link>
                 <button onClick={() => deleteProduct(product.id)} className="btn btn-danger">
