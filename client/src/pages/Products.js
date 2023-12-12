@@ -79,15 +79,15 @@ function Products() {
         </tbody>
       </table>
 
-      {/* Pagination */}
-      <ul className="pagination">
-        {Array.from({ length: Math.ceil(productList.length / productsPerPage) }).map((_, index) => (
-          <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}>
-            <button onClick={() => paginate(index + 1)} className="page-link">
-              {index + 1}
+           {/* Pagination */}
+           <ul className="pagination">
+           {Array.from({ length: Math.ceil(productList.length / productsPerPage) }).map((_, index) => (
+           <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}>
+           <button onClick={() => paginate(index + 1)} className="page-link">
+           {index + 1}
             </button>
-          </li>
-        ))}
+            </li>
+             ))}
       </ul>
     </div>
   );
