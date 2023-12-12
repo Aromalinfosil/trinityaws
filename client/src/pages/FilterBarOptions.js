@@ -50,7 +50,7 @@ const FilterBarOptions = () => {
     setCheckedItems(updatedCheckedItems);
 
     if (event.target.checked) {
-      navigate(`/category/${category}`);
+      navigate(`http://65.1.134.51:3001/category/${category}`);
     }
   };
 

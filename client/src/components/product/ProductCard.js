@@ -37,7 +37,7 @@ const ProductCard = ({ product, id, image, name, price, model_no, description}) 
 			<div class="men-pro-item">
 		  <div class="">
       <center> <figure className="">
-      <a href ={`/product-details/${id}`}>
+      <a href ={`http://65.1.134.51:3001/product-details/${id}`}>
       <img src={`http://65.1.134.51:3001/uploads/${image}`} alt="product-img" />
       </a>
       </figure></center> 

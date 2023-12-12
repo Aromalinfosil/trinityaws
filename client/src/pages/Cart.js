@@ -41,7 +41,7 @@ const Cart = () => {
   
     // Fetch cart items for the logged-in user
   axios
-  .get(`/cart/items?UId=${UId}`)
+  .get(`http://65.1.134.51:3001/cart/items?UId=${UId}`)
   .then((response) => {
   const cartItems = response.data.cartItems;
   setCartItemCount(cartItems.length);
@@ -88,7 +88,7 @@ const Cart = () => {
           // After the order is successfully saved, delete each item in the cart after 10 seconds  
       setTimeout(() => {
       axios
-      .delete(`/cart/items/${item.cartid}`)
+      .delete(`http://65.1.134.51:3001/cart/items/${item.cartid}`)
       .then((response) => {
       console.log('Cart item deleted successfully:', response.data);
       // Update the cart items in the frontend after successful deletion
@@ -118,7 +118,7 @@ const Cart = () => {
 
     // Fetch cart items for the logged-in user
      axios
-     .get(`/cart/items?UId=${UId}`)
+     .get(`http://65.1.134.51:3001/cart/items?UId=${UId}`)
      .then((response) => {
      const cartItems = response.data.cartItems.map((item) => ({
       ...item,
@@ -136,7 +136,7 @@ const Cart = () => {
       const removeItem = (cartid) => {
       // Replace 'your_backend_api_base_url' with the actual base URL of your backend API
       axios
-      .delete(`/cart/items/${cartid}`)
+      .delete(`http://65.1.134.51:3001/cart/items/${cartid}`)
       .then((response) => {
       console.log(response.data); // Log the response from the backend
       // Update the cart items in the frontend after successful deletion
@@ -180,7 +180,7 @@ const Cart = () => {
   const updateQuantityAndPriceInDatabase = (itemId, newQuantity) => {
     // Make an API call to update the quantity and price in the database
     axios
-      .put('/cart/update', { cartid: itemId, quantity: newQuantity })
+      .put('http://65.1.134.51:3001/cart/update', { cartid: itemId, quantity: newQuantity })
       .then((response) => {
         console.log(response.data.message); // Log the success message
       })
@@ -245,14 +245,14 @@ const Cart = () => {
                             {cartItems.map((item) => (
         <div key={item.cartid} className="cart_item">
           <figure className="cart_item_img">
-            <Link to={`/product-details/${item.id}`}>
+            <Link to={`http://65.1.134.51:3001/product-details/${item.id}`}>
               <img src={`http://65.1.134.51:3001/uploads/${item.image}`} alt="product-img" />
             </Link>
           </figure>
           <div className="cart_item_info">
             <div className="cart_item_head">
               <h4 className="cart_item_title">
-                <Link to={`/product-details/${item.id}`}>
+                <Link to={`http://65.1.134.51:3001/product-details/${item.id}`}>
                   {item.name} {item.description}
                 </Link>
               </h4>
